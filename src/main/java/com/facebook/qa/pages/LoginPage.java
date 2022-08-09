@@ -36,4 +36,8 @@ public class LoginPage extends TestBase {
 				
 				return new HomePage();
 			}
+			public boolean validateFBImage() {
+				// TODO Auto-generated method stub
+				return false;
+			}
 }

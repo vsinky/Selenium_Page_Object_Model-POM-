@@ -12,7 +12,7 @@ public class HomePage extends TestBase {
 	
 	
 	@FindBy(xpath = "//span[contains(text(),'Sinky Verma')]")
-	WebElement usernamelabel;
+	WebElement profilePage;
 
 	@FindBy(xpath = "//span[text()='Find Friends']")
 	WebElement findFriendsLink;
@@ -33,14 +33,19 @@ public class HomePage extends TestBase {
 	    		 
 	}
 	public boolean verifyUsername() {
-		return usernamelabel.isDisplayed();
+		return profilePage.isDisplayed();
 	}
 	public HomePage ClickOnFindFriendsLink() {
 		findFriendsLink.click();
 		return new HomePage();
 	}
-	public GroupsPage ClickOnGroupsLink() {
-		groupsLink.click();
-		return new GroupsPage();
+//	public GroupsPage ClickOnGroupsLink() {
+//		groupsLink.click();
+//		return new GroupsPage();
+//	}
+
+	public ProfilePage clickOnprofilePage() {
+		profilePage.click();
+		return new ProfilePage();
 	}
 }

@@ -1,8 +1,7 @@
 package com.facebook.qa.pages;
 
-
 import com.facebook.qa.base.TestBase;
 
-public class GroupsPage extends TestBase {
-	
+public class ProfilePage extends TestBase {
+
 }
