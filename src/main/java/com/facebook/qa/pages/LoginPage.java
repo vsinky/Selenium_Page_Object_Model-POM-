@@ -1,8 +1,10 @@
 package com.facebook.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.facebook.qa.base.TestBase;
 
@@ -29,15 +31,20 @@ public class LoginPage extends TestBase {
 				return driver.getTitle();
 			}
 			
-			public HomePage login(String un, String pwd) {
-				username.sendKeys(un);
+			public HomePage login(String uname, String pwd) {
+				username.sendKeys(uname);
 				password.sendKeys(pwd);
 				loginBtn.click();
 				
 				return new HomePage();
 			}
-			public boolean validateFBImage() {
-				// TODO Auto-generated method stub
-				return false;
-			}
+//			public void loginMutipleAccounts(String title,String username2, String password2) {
+//				Select select = new Select(driver.findElement(By.name("title")));
+//				select.selectByVisibleText(title);
+//				username.sendKeys(username2);
+//				password.sendKeys(password2);
+//				loginBtn.click();
+//				
+//			}
+			
 }

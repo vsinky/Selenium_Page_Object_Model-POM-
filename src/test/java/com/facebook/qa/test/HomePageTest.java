@@ -40,4 +40,9 @@ public class HomePageTest extends TestBase {
 	Assert.assertTrue(homePage.verifyUsername());	
 	log.info("verify username test: ");
 }
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+
 }

@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+
+<listeners>
+		<listener class-name="package com.facebook.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.facebook.qa.test.LoginPageTest"/>
+      <class name="com.facebook.qa.test.ProfilePageTest"/>
+      <class name="com.facebook.qa.test.SignUpPageTest"/>
       <class name="com.facebook.qa.test.HomePageTest"/>
-      <class name="com.facebook.qa.test.GroupsPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

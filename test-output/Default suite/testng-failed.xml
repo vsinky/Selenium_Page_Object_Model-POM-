@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.facebook.qa.test.LoginPageTest">
+      <class name="com.facebook.qa.test.ProfilePageTest">
         <methods>
-          <include name="fbLogoImageTest"/>
           <include name="setUp"/>
+          <include name="verifyProfilePageTest"/>
         </methods>
-      </class> <!-- com.facebook.qa.test.LoginPageTest -->
+      </class> <!-- com.facebook.qa.test.ProfilePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

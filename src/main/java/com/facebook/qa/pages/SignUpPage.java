@@ -67,5 +67,10 @@ public class SignUpPage extends TestBase {
 		
 		return new HomePage();
 	}
+
+	public String validateSignUpPageTitle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 
