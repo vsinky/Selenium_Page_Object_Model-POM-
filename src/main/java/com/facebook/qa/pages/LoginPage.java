@@ -19,8 +19,8 @@ public class LoginPage extends TestBase {
 			@FindBy(xpath = "//button[contains(text(),'Log')]")
 			WebElement loginBtn;
 			
-			@FindBy(xpath = "//a[text()='Create New Account']']")
-			WebElement CreateAccountbtn;
+			//@FindBy(xpath = "//a[text()='Create New Account']']")
+			//WebElement CreateAccountbtn;
 			
 			//Initialize page objects
 			public LoginPage() {

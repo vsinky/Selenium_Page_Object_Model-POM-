@@ -57,9 +57,6 @@ public void loginTest(String uname,String pwd) throws InterruptedException {
 	log.info("login successful with username: " +uname);
 
 }
-
-
-
 	
 	@AfterMethod
 	public void tearDown() {

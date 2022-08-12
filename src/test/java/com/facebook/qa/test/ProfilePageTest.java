@@ -22,7 +22,7 @@ public class ProfilePageTest extends TestBase {
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		homePage = loginPage.login(prop.getProperty("email"), prop.getProperty("password"));
 		profilePage = new ProfilePage();
 	}
 	
@@ -36,10 +36,10 @@ public class ProfilePageTest extends TestBase {
 		profilePage = homePage.clickOnprofilePage();
 	}
 	
-//	@AfterMethod
-//	public void tearDown() {
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
 	
 
 }
