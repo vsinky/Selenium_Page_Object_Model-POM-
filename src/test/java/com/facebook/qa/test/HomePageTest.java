@@ -16,7 +16,6 @@ public class HomePageTest extends TestBase {
 	HomePage homePage;
 	Logger log = Logger.getLogger(HomePageTest.class);
     
-	//NotificationsPage notificationPage;
 	public HomePageTest() {
 		super();
 }
@@ -31,7 +30,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority = 1)
 	public void verifyHomePageTitleTest() {
 	  String homePageTitle = homePage.verifyHomePageTitle();
-	  Assert.assertEquals(homePageTitle, "Log in to Facebook");
+	  Assert.assertEquals(homePageTitle, "Facebook");
 	  
 	}
 	

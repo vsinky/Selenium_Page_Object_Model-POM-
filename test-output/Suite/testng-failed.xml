@@ -6,15 +6,9 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.facebook.qa.test.SignUpPageTest">
-        <methods>
-          <include name="createNewAccountTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.facebook.qa.test.SignUpPageTest -->
       <class name="com.facebook.qa.test.ProfilePageTest">
         <methods>
+          <include name="verifyHomePageTitleTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="verifyProfilePageTest"/>
@@ -22,11 +16,28 @@
       </class> <!-- com.facebook.qa.test.ProfilePageTest -->
       <class name="com.facebook.qa.test.HomePageTest">
         <methods>
+          <include name="verifyHomePageTitleTest"/>
           <include name="verifyUsernameTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.facebook.qa.test.HomePageTest -->
+      <class name="com.facebook.qa.test.SignUpPageTest">
+        <methods>
+          <include name="createNewAccountTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.facebook.qa.test.SignUpPageTest -->
+      <class name="com.facebook.qa.test.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="LoginPageTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.facebook.qa.test.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

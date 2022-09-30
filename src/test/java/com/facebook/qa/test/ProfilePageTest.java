@@ -29,13 +29,18 @@ public class ProfilePageTest extends TestBase {
 	@Test(priority=1)
 	public void verifyHomePageTitleTest() {
 		String homePageTitle = homePage.verifyHomePageTitle();
-		Assert.assertEquals(homePageTitle, "Log in to Facebook");
+		Assert.assertEquals(homePageTitle, "Facebook");
 	}
 	@Test(priority=2)
 	public void verifyProfilePageTest() {
 		profilePage = homePage.clickOnprofilePage();
 	}
 	
+	@Test(priority = 3)
+    public void seeAllPhotosTest() {
+    profilePage.seeAllPhotos();
+    }
+
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
