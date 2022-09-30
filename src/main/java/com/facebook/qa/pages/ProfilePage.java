@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.facebook.qa.base.TestBase;
 
 public class ProfilePage extends TestBase {
+
 	@FindBy(xpath = "//span[contains(text(),'Sinky Verma')]")
 	WebElement profilePage;
 
@@ -15,9 +16,6 @@ public class ProfilePage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(@href,'/notifications/')]")
 	WebElement NotificationsLink;
-
-	@FindBy(xpath = "//a[contains(@href,'/groups/')]")
-	WebElement groupsLink;
 
 	@FindBy(xpath = "//span[contains(text(),'See All Photos')]")
 	WebElement seeAllPhotosLink;
